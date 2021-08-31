@@ -264,6 +264,10 @@ public class JCameraView extends FrameLayout implements CameraInterface.CameraOp
         });
     }
 
+    public void switchCamera(){
+        machine.swtich(mVideoView.getHolder(), screenProp);
+    }
+
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
